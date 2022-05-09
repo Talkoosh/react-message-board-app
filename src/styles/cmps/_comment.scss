@@ -7,6 +7,7 @@
         border-radius: 5px;
         padding: 0 30px;
         max-width: 700px;
+        min-width: fit-content;
 
         .comment-score {
             background-color: #d5dce5;
@@ -33,6 +34,12 @@
         .comment-content {
             padding: 10px 50px;
             text-align: left;
+            textarea{
+                resize: none;
+                height: 70px;
+                padding: 5px 10px;
+                
+            }
             p {
                 margin: 0;
             }
@@ -55,16 +62,34 @@
             font-size: 1rem;
         }
     }
-    .add-comment-exit{
+    .add-comment-exit {
         position: absolute;
         left: 0;
         bottom: 180px;
         background-color: transparent;
         border: none;
 
-        &:hover{
+        &:hover {
             transform: scale(1.1);
             cursor: pointer;
+        }
+    }
+
+    .comment-edit {
+        display: flex;
+        button {
+            border-radius: 25rem;
+            padding: 0 20px;
+            cursor: pointer;
+            height: 32px;
+            margin-inline-start: 5px;
+            background-color: transparent;
+            border: 1px solid rgb(197, 197, 197);
+
+            &:nth-child(2) {
+                border: 1px solid rgb(241, 91, 91);
+                color: rgb(241, 91, 91);
+            }
         }
     }
 }

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Comment } from './Comment.jsx';
 
 
-export function CommentList({ setComments, comments, updateScore, user }) {
+export function CommentList({ saveComment, deleteComment, setComments, comments, updateScore, user }) {
 
     return (
         <ul className="comment-list">
@@ -11,21 +11,12 @@ export function CommentList({ setComments, comments, updateScore, user }) {
                     className="comment-item"
                     key={comment.id}>
                     <Comment
+                        saveComment={saveComment}
+                        deleteComment={deleteComment}
                         setComments={setComments}
                         user={user}
                         updateScore={updateScore}
                         comment={comment} />
-                    {/* <ul className="indented-comments">
-                        <div className="line"></div>
-                        {comment.replies.map(reply => {
-                            return <li className="comment-item" key={reply.id}>
-                                <CommentList setComments={setComments}
-                                    comments={comments}
-                                    updateScore={updateScore}
-                                    user={user} />
-                            </li>
-                        })}
-                    </ul> */}
                 </li>
             })}
         </ul>

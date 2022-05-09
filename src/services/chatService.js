@@ -1,7 +1,9 @@
 export const chatService = {
     loadComments,
     addComment,
-    updateScore
+    updateScore,
+    deleteComment,
+    saveComment
 }
 
 let gComments = require('../data/data.json').comments;
@@ -16,9 +18,22 @@ function addComment(txt, byUser, parentId) {
         const parentComment = _getComment(parentId);
         parentComment.replies.push(comment);
     } else {
-        gComments.push(comment); 
+        gComments.push(comment);
     }
 
+    return Promise.resolve();
+}
+
+function saveComment(id, txt){
+    const comment = _getComment(id); 
+    comment.content = txt; 
+    return Promise.resolve(); 
+}
+
+function deleteComment(id) {
+    const parentComments = _getParentComments(id);
+    const idx = parentComments.findIndex(comment => comment.id === id );
+    parentComments.splice(idx, 1); 
     return Promise.resolve();
 }
 
@@ -34,6 +49,17 @@ function _getComment(id, comments = gComments) {
         if (comments[i].replies.length) {
             const currComment = _getComment(id, comments[i].replies);
             if (currComment) return currComment;
+        }
+    }
+    return null;
+}
+
+function _getParentComments(id, comments = gComments) {
+    for (var i = 0; i < comments.length; i++) {
+        if (comments[i].id === id) return comments;
+        if (comments[i].replies.length) {
+            const currComments = _getParentComments(id, comments[i].replies);
+            if (currComments) return currComments;
         }
     }
     return null;
