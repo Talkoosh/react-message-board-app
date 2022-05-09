@@ -85,6 +85,9 @@
             margin-inline-start: 5px;
             background-color: transparent;
             border: 1px solid rgb(197, 197, 197);
+            &:hover{
+                transform: scale(1.1);
+            }
 
             &:nth-child(2) {
                 border: 1px solid rgb(241, 91, 91);
