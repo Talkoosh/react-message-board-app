@@ -1,0 +1,22 @@
+section.add-comment{
+    position: relative;
+    img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+    div.add-comment{
+        margin: 0;
+    }
+
+    .add-exit{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        border: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+}

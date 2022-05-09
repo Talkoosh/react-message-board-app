@@ -1,0 +1,51 @@
+.chat-main{
+    .comment-list{
+        .comment-item{
+            margin-top: 20px;
+        }
+    }
+
+    .indented-comments{
+        margin-inline-start: 50px;
+        position: relative;
+
+        & .line{
+            width: 4px;
+            height: 100%;
+            border-radius: 25rem;
+            position: absolute;
+            background-color: lightsteelblue;
+            // left: -5%;
+            transform: translateX(-45px);
+        }
+    }
+
+    .add-comment{
+        width: 500px;
+        margin-top: 30px;
+        display: flex;
+        align-items: flex-start;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        gap: 30px;
+
+        textarea{
+            resize: none;
+            padding: 5px 10px;
+        }
+
+        button.send-btn{
+            padding: 0 20px;
+            height: 32px;
+            color: white;
+            background-color: navy;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+        
+    }
+}
