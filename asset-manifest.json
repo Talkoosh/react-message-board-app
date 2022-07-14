@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-message-board-app/static/css/main.01de5274.css",
+    "main.js": "/react-message-board-app/static/js/main.48abe6c0.js",
+    "static/js/787.6f726199.chunk.js": "/react-message-board-app/static/js/787.6f726199.chunk.js",
+    "index.html": "/react-message-board-app/index.html",
+    "main.01de5274.css.map": "/react-message-board-app/static/css/main.01de5274.css.map",
+    "main.48abe6c0.js.map": "/react-message-board-app/static/js/main.48abe6c0.js.map",
+    "787.6f726199.chunk.js.map": "/react-message-board-app/static/js/787.6f726199.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01de5274.css",
+    "static/js/main.48abe6c0.js"
+  ]
+}
