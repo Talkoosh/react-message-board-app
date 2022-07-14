@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.01de5274.css",
-    "main.js": "/static/js/main.af21cceb.js",
-    "static/js/787.6f726199.chunk.js": "/static/js/787.6f726199.chunk.js",
-    "index.html": "/index.html",
-    "main.01de5274.css.map": "/static/css/main.01de5274.css.map",
-    "main.af21cceb.js.map": "/static/js/main.af21cceb.js.map",
-    "787.6f726199.chunk.js.map": "/static/js/787.6f726199.chunk.js.map"
+    "main.css": "/Talkoosh/react-message-board-app/static/css/main.01de5274.css",
+    "main.js": "/Talkoosh/react-message-board-app/static/js/main.35792863.js",
+    "static/js/787.6f726199.chunk.js": "/Talkoosh/react-message-board-app/static/js/787.6f726199.chunk.js",
+    "index.html": "/Talkoosh/react-message-board-app/index.html",
+    "main.01de5274.css.map": "/Talkoosh/react-message-board-app/static/css/main.01de5274.css.map",
+    "main.35792863.js.map": "/Talkoosh/react-message-board-app/static/js/main.35792863.js.map",
+    "787.6f726199.chunk.js.map": "/Talkoosh/react-message-board-app/static/js/787.6f726199.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.01de5274.css",
-    "static/js/main.af21cceb.js"
+    "static/js/main.35792863.js"
   ]
 }
